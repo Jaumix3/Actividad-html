@@ -1,0 +1,21 @@
+:root {
+  --blanc: #fff;
+  --blau-fosc: #1B1F3B;
+  --verd-accent: #DCF763;
+  --gris: #F1F2EE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Centrar elements*/
+form, input, label, textarea {
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+}
