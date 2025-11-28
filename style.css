@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--blau-fosc);
 }
 
 /*Centrar elements*/
@@ -18,4 +19,38 @@ form, input, label, textarea {
 
 section {
   text-align: center;
+
+}
+
+h1 {
+  color: var(--verd-accent);
+  text-align: center;
+}
+
+header ul{
+  text-decoration: none;
+  pointer-events: stroke;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+main{
+  background-color:var(--gris) ;
+}
+
+
+/*Color blau dels fons i text blanc*/
+header{
+  background-color: var(--blau-fosc);
+  color: var(--blanc);
+  text-align: center;
+  padding: 20px;
+}
+
+/*Color blau dels fons i text blanc*/
+footer{
+  background-color: var(--blau-fosc);
+  color:var(--blanc);
+  text-align: center;
+  padding: 20px;
 }
