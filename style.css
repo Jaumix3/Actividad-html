@@ -5,7 +5,7 @@
   --gris: #F1F2EE;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,14 +28,62 @@ h1 {
 }
 
 header ul{
+  display: inline-flex;
+  width: 30%;
+}
+header ul li {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+header ul li a {
   text-decoration: none;
-  pointer-events: stroke;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  font-size: 20px;
+}
+header ul li a:hover {
+  color: black;
 }
 
 main{
   background-color:var(--gris) ;
+  padding: 20px;
+  height: 100vh;
+}
+main h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main form {
+  display: inline-block;
+  gap: 10px; /* margen entre cada label */
+}
+main form input:focus {
+  outline: none;
+  background-color: var(--verd-accent);
+  opacity: 0.5;
+}
+main form button {
+  background-color: var(--verd-accent);
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px var(--blau-fosc);
+}
+
+main form input{
+  display: block;
+  margin:10px;  
+}
+
+main form label{
+  display: block;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+main form textarea{
+  display: block;
 }
 
 
@@ -53,4 +101,33 @@ footer{
   color:var(--blanc);
   text-align: center;
   padding: 20px;
+
 }
+footer ul i{
+  display: none;
+}
+
+@media(max-width: 700px) {
+/*Hacer (importante)*/
+  footer ul i{
+    display: inline-block;
+  }
+  .desktop-only{
+    display: none;
+  }
+  header ul{
+    display: inline-block;
+  }
+  aside{
+    display: none;
+    position: relative;
+    right: 200px;
+    background-color: var(--verd-accent);
+    padding:10px;
+  }
+
+  *{
+    position: calc(100%-200px);
+  }
+}
+
